@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style src="./main.css"></style>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .bg {
+      /* The image used */
+      background-image: url("./img/home.jpeg");
+
+      /* Full height */
+      height: 600px !important;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      width: 100%;
+      height: auto;
+      opacity: 0.3;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 18px;
+    }
+
+    .mySlides {
+      display: none
+    }
+
+    .w3-left,
+    .w3-right,
+    .w3-badge {
+      cursor: pointer
+    }
+
+    .w3-badge {
+      height: 13px;
+      width: 13px;
+      padding: 0
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+        onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#service" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SERVICE</a>
+      <a href="#media" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> MEDIA</a>
+      <a href="#media" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Helpful Links</a>
+      <a href="#aboutus" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> ABOUT US</a>
+      <a href="#contacts" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTS</a>
+      <a href="#contacts" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> FAQs</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+        <!-- <i class="fa fa-search"></i> -->
+      </a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
+    </div>
+  </div>
+
+  <!-- First Parallax Image with Logo Text -->
+  <div id="home">
+    <!-- <div class="w3-display-middle" style="white-space:nowrap;"> -->
+
+
+    <div class="container">
+      <div class="bg"></div>
+      <!-- <div class="center">Iraq History</div> -->
+      <span class="center w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">iraq <span
+          class="w3-hide-small">history</span>.</span>
+    </div>
+    <div class="w3-content w3-container w3-padding-64">
+      <h3 class="w3-center">HOME</h3>
+      <!-- <p class="w3-center"><em>Steps how to apply for a passport</em></p> -->
+      
+      <p>Iraq is a country in southwestern Asia.
+        During ancient times, lands that now constitute Iraq were known as Mesopotamia (“Land Between the Rivers”), a
+        region
+        whose extensive alluvial plains gave rise to some of the world’s earliest civilizations, including those of Sumer,
+        Akkad, Babylon, and Assyria. This wealthy region, comprising much of what is called the Fertile Crescent, later
+        became a valuable part of larger imperial polities, including sundry Persian, Greek, and Roman dynasties, and
+        after
+        the 7th century, it became a central and integral part of the Islamic world. Iraq’s capital, Baghdad, became the
+        capital of the Abbasid Caliphate in the 8th century. The modern nation-state of Iraq was created following World
+        War
+        I (1914–18) from the Ottoman provinces of Baghdad, Basra, and Mosul and derived its name from the Arabic term used
+        in the premodern period to describe a region that roughly corresponded to Mesopotamia and modern northwestern Iran
+      </p>
+    
+    <!-- </div> -->
+  </div>
+
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="service">
+    <h3 class="w3-center">SERVICE</h3>
+    <p class="w3-center"><em>Steps how to apply for a passport</em></p>
+    
+    <p>All minor passport applications must include:
+
+      The minor’s most recent U.S. Passport; and
+      A U.S. birth certificate, Consular Report of Birth Abroad, Naturalization Certificate, or Citizenship Certificate;
+      and
+      One valid form of photo identification (e.g. foreign passport, driver’s license, military ID, etc.) from each
+      parent; and
+      One passport photograph; and
+      A completed Form DS-11 ; and
+      Fee according to Fee Schedule, payable in U.S. Dollars, or by credit card (Visa, MasterCard, or American Express,
+      Diners Club, or Discover).</p>
+    <!-- <div class="w3-row">
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
+        <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+          width="500" height="333">
+      </div>
+
+      <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+          elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div> -->
+    <!-- <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+    <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+    </div> -->
+  </div>
+    <!-- <div class="w3-container">
+      <h2>Slideshow Indicators</h2>
+      <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
+    </div> -->
+    
+    <div class="w3-content w3-display-container" style="max-width:100% " style="max-height:200px ">
+      <img class="mySlides" src="./img/home.jpeg" style="width:100%">
+      <img class="mySlides" src="./img/az.png" style="width:100%">
+      <img class="mySlides" src="./img/az.png" style="width:100%">
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  <!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">14+</span><br>
+      Partners
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">55+</span><br>
+      Projects Done
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">89+</span><br>
+      Happy Clients
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">150+</span><br>
+      Meetings
+    </div>
+  </div> -->
+
+  <!-- Second Parallax Image with Portfolio Text -->
+  <!-- <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+  </div> -->
+
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="media">
+    <h3 class="w3-center">MEDIA</h3>
+    <p class="w3-center"><em>Steps how to apply for a passport</em><br>
+      <br>
+      <iframe width="800" height="500" href= "https://www.youtube.com/watch?v=qL1_oQy4XSA">
+      </iframe>
+      <br>
+      <br>
+      <em class="w3-center">Helpful Links: <br>
+        <br>
+        <a href="https://www.iraqiembassy.us/" target="_blank">Visit DC Embassy!</a> <br>
+        <a href="https://www.iraqiembassy.us/page/consulate-general-los-angeles" target="_blank">Visit Los Angeles Embassy!</a> <br>
+        
+        <br><br></em>
+    </p><br>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <!-- <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+     </div> -->
+  </div>
+
+  <!-- <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div> -->
+  </div>
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="aboutus">
+    <h3 class="w3-center">ABOUT US</h3>
+    <!-- <p class="w3-center"><em>I love photography</em></p> -->
+    <p>Hi there I'm Othman an IT(Information Technology) student I'm attending Arizona State University. I build this
+      website is to help you to learn about how to apply or renew, for an Iraqi passport inside the USA, thanks for
+      using this website.</p>
+    <!-- <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
+      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    Hide this text on small devices -->
+    <!-- <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div> -->
+    <!-- </div>  -->
+    <!-- <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div> -->
+  </div>
+  <div class="w3-content w3-container w3-padding-64" id="aboutus">
+    <h3 class="w3-center">ABOUT US</h3>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+        class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+    </div>
+  </div>
+
+  <!-- Container (Contact Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="FAQs">
+    <h3 class="w3-center">FAQs</h3>
+    <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+        <img src="./img/az.png" class="w3-image w3-round" style="width:100%">
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 1201 E Michigan Ave,
+          Phoenix,Az 85022<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 0016157205955<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: oilateef@asu.edu<br>
+        </div>
+        <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <!-- <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div> -->
+    <p>Powered by <a class="w3-hover-text-green">othman lateef</p>
+  </footer>
+
+  <script src="./home.js">
+
+  </script>
+
+</body>
+
+</html>
